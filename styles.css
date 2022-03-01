@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(38, 39, 38);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.479);
+}
+header h1{
+    margin: 0 20px;
+    color: #fff;
+}
+header a {
+    text-decoration: none;
+}
+header form{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    display: inline-block;
+    color:  #fff;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header ul li:hover{
+    transform: scale(0.9);
+}
+button{
+    background-color: rgb(38, 39, 38);
+    border:none;
+}
+ion-icon{
+    background-color: rgb(38, 39, 38);
+    color: #FFF;
+    font-size: 25px;
+    padding: 0 0 0 20px;
+}
+/* The search bar */
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin: 0 15px 0 0;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div{
+    width: 250px;
+    height: 360px;
+    margin: 19px 15px;
+    background: red;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.479);
+}
+main div:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px 3px rgba(255, 0, 0, 0.452);
+    -webkit-filter:brightness(1.2)
+}
+img{
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+
+}
+h2{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 655px) {
+    ul.cat{
+        display: none;
+    }
+    #search{
+        width: 160px;
+    }
+    main div{
+        width: 35%;
+        height: 35%;
+        background: none;
+    }
+    h2{
+        display: none;
+    }
+}
+@media screen and (min-width: 654px) {
+    span{
+        display: none;
+    }
+    header ul li{
+        font-size: 16px;
+    }
+}
